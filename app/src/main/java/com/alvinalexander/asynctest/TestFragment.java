@@ -24,7 +24,9 @@ public class TestFragment extends Fragment {
 
     // get some fake data
     //private static final String TEST_URL                 = "http://jsonplaceholder.typicode.com/comments";
-    private static final String TEST_URL                   = "http://denverpost.com/sports";
+    //private static final String TEST_URL                   = "http://denverpost.com/sports";
+    private static final String TEST_URL="http://rest.semakprocesados.com/RestServiceImpl.svc/json/7";
+    //private static final String TEST_URL="https://jsonplaceholder.typicode.com/posts";
     private static final String ACTION_FOR_INTENT_CALLBACK = "THIS_IS_A_UNIQUE_KEY_WE_USE_TO_COMMUNICATE";
 
     ProgressDialog progress;
@@ -86,7 +88,7 @@ public class TestFragment extends Fragment {
             }
             String response = intent.getStringExtra(RestTask.HTTP_RESPONSE);
             ourTextView.setText(response);
-            Log.i(TAG, "RESPONSE = " + response);
+            Log.i(TAG, "RESPONSE Iurgi= " + response);
             //
             // my old json code was here. this is where you would parse it.
             //

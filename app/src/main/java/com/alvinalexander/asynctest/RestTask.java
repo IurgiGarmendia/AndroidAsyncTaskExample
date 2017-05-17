@@ -52,7 +52,7 @@ public class RestTask extends AsyncTask<HttpUriRequest, Void, String>
 
     @Override
     protected void onPostExecute(String result) {
-        Log.i(TAG, "RESULT = " + result);
+        Log.i(TAG, "RESULT Iurgi= " + result);
         Intent intent = new Intent(mAction);
         intent.putExtra(HTTP_RESPONSE, result);
 
